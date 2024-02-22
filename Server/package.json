@@ -12,6 +12,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon app.js",
+    "build": "babel src -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
