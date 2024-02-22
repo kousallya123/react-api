@@ -14,7 +14,7 @@ function App() {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/count');
+      const response = await axios.get('https://react-api-two-chi.vercel.app/api/count');
       const data = response.data;
       setAddCount(data.addCount);
       setItems(data.data);
@@ -30,7 +30,7 @@ function App() {
   const handleAdd = async (values) => {
     const {title,description}=values
     try {
-      const response = await axios.post('http://localhost:5000/api/add', {
+      const response = await axios.post('https://react-api-two-chi.vercel.app/api/add', {
         title,
         description,
       });
@@ -49,7 +49,7 @@ const handleEdit=(items)=>{
   
     try {
       const response = await axios.put(
-        `http://localhost:5000/api/update/${selectedComponent._id}`,
+        `https://react-api-two-chi.vercel.app/api/update/${selectedComponent._id}`,
         {
           title,
           description,
@@ -68,7 +68,7 @@ const handleEdit=(items)=>{
   
     try {
       const response = await axios.delete(
-        `http://localhost:5000/api/delete/${id}`,
+        `https://react-api-two-chi.vercel.app/api/delete/${id}`,
         {
         }
       );
