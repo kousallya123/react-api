@@ -22,7 +22,7 @@ const Component = mongoose.model('Component', componentSchema);
 let addCount = 0;
 let updateCount = 0;
 
-app.post('/add', async (req, res) => {
+app.post('/api/add', async (req, res) => {
   try {
     const { title, description } = req.body;
     await Component.create({ title, description });
