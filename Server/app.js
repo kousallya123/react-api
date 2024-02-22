@@ -3,15 +3,14 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const bodyParser = require('body-parser');
-
+const dotenv=require('dotenv')
 const app = express();
-const port = 5000;
-
+dotenv.config()
 app.use(cors());
 
 app.use(bodyParser.json());
 
-mongoose.connect('mongodb+srv://kousallya:FatorkKDpivaKISi@cluster0.sql4ele.mongodb.net/api?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(process.env.Mongo_url, { useNewUrlParser: true, useUnifiedTopology: true });
 
 const componentSchema = new mongoose.Schema({
   title: String,
