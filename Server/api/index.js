@@ -10,7 +10,7 @@ dotenv.config();
 app.use(cors());
 app.use(bodyParser.json());
 
-mongoose.connect(process.env.Mongo_url, { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect("mongodb+srv://kousallya:FatorkKDpivaKISi@cluster0.sql4ele.mongodb.net/api?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true });
 
 const componentSchema = new mongoose.Schema({
   title: String,
