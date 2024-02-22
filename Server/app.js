@@ -63,6 +63,15 @@ app.get('/api/count', async(req, res) => {
 
 });
 
+app.get('/', async(req, res) => {
+  try {
+      res.json({message:'Hellooo'});
+  } catch (error) {
+      res.status(500).json({ error: 'Internal Server Error' });
+  }
+
+});
+
 app.listen(5000, () => {
   console.log(`Server is running on port 5000`);
 });
