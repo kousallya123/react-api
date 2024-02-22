@@ -62,7 +62,7 @@ app.get('/api/count', async(req, res) => {
 
 });
 
-app.get('/', async(req, res) => {
+app.get('/api', async(req, res) => {
   try {
       res.json({message:'Hellooo'});
   } catch (error) {
