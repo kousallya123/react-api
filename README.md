@@ -18,12 +18,12 @@ To run the frontend locally, follow these steps:
 2. Navigate to the project directory
       
       ```bash
-      cd react-api/client
+        cd react-api/client
 
 3. Install dependencies
 
        ```bash
-       npm install
+          npm install
 
 4. Start the development server
 
