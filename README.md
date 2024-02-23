@@ -12,11 +12,15 @@ To run the frontend locally, follow these steps:
 
 #!/bin/bash
 
-# Clone the repository
-git clone https://github.com/kousallya123/react-api.git
+1. Clone the repository
 
-# Navigate to the project directory
-cd react-api/client
+  ```bash
+      git clone https://github.com/kousallya123/react-api.git
+
+2. Navigate to the project directory
+
+    ```bash
+      cd react-api/client
 
 # Install dependencies
 npm install
