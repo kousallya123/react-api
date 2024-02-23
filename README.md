@@ -10,22 +10,25 @@ The frontend is hosted on Vercel at https://react-api-efn9.vercel.app/.
 To run the frontend locally, follow these steps:
 
 
-#!/bin/bash
-
 1. Clone the repository
-
+    
+      ```bash
       git clone https://github.com/kousallya123/react-api.git
 
 2. Navigate to the project directory
-
-
+      
+  ```bash
       cd react-api/client
 
-# Install dependencies
-npm install
+3. Install dependencies
 
-# Start the development server
-npm start
+    
+  ```bash
+     npm install
+
+
+4. Start the development server
+      npm start
 
 
 
