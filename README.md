@@ -22,7 +22,6 @@ To run the frontend locally, follow these steps:
 
 3. Install dependencies
 
-       ```bash
           npm install
 
 4. Start the development server
